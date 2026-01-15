@@ -7,10 +7,11 @@ services:
     ports:
       - "3001:3000"
     environment:
-      - DATABASE_URL=postgresql://postgres:password@db:5432/redaction_ia
+      - DATABASE_URL=postgresql://postgres:${DB_PASSWORD:-password}@db:5432/redaction_ia
       - JWT_SECRET=${JWT_SECRET:-dev-secret-minimum-32-caracteres-pour-jwt}
       - APP_PASSWORD=${APP_PASSWORD:-7zLTt4yDdaKQAK2026}
       - FRONTEND_URL=${FRONTEND_URL:-http://localhost:4321}
+      - DB_PASSWORD=${DB_PASSWORD:-password}
       - NODE_ENV=production
     depends_on:
       db:
