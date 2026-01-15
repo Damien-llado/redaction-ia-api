@@ -17,6 +17,8 @@ services:
       db:
         condition: service_healthy
     restart: unless-stopped
+    networks:
+      - redaction-network
 
   # PostgreSQL
   db:
@@ -34,6 +36,12 @@ services:
       timeout: 5s
       retries: 5
     restart: unless-stopped
+    networks:
+      - redaction-network
 
 volumes:
   postgres_data:
+
+networks:
+  redaction-network:
+    driver: bridge
