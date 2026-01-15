@@ -23,12 +23,15 @@ app.use(helmet());
 app.use(cors({
   origin: (origin, callback) => {
     // Autoriser tous les localhost (dev) + frontend URL spécifique (prod)
-    const allowedOrigins = [
+    const allowedOrigins: string[] = [
       'http://localhost:4321',
       'http://localhost:4322',
-      'http://localhost:4323',
-      process.env.FRONTEND_URL
-    ].filter(Boolean);
+      'http://localhost:4323'
+    ];
+
+    if (process.env.FRONTEND_URL) {
+      allowedOrigins.push(process.env.FRONTEND_URL);
+    }
 
     if (!origin || allowedOrigins.some(allowed => origin.startsWith(allowed))) {
       callback(null, true);
