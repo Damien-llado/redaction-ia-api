@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "nodemon --exec ts-node src/server.ts",
     "build": "tsc",
+    "lint": "tsc --noEmit",
+    "prepush": "npm run lint && npm run build",
     "start": "node dist/server.js",
     "migrate": "node dist/scripts/migrate-data.js",
     "migrate:dev": "ts-node src/scripts/migrate-data.ts",
