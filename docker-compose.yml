@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  # Backend Express
+  api:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:password@db:5432/redaction_ia
+      - JWT_SECRET=${JWT_SECRET:-dev-secret-minimum-32-caracteres-pour-jwt}
+      - APP_PASSWORD=${APP_PASSWORD:-7zLTt4yDdaKQAK2026}
+      - FRONTEND_URL=${FRONTEND_URL:-http://localhost:4321}
+      - NODE_ENV=production
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # PostgreSQL
+  db:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_DB=redaction_ia
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
