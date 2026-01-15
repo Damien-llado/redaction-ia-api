@@ -21,7 +21,21 @@ const PORT = process.env.PORT || 3000;
 // Sécurité
 app.use(helmet());
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:4321',
+  origin: (origin, callback) => {
+    // Autoriser tous les localhost (dev) + frontend URL spécifique (prod)
+    const allowedOrigins = [
+      'http://localhost:4321',
+      'http://localhost:4322',
+      'http://localhost:4323',
+      process.env.FRONTEND_URL
+    ].filter(Boolean);
+
+    if (!origin || allowedOrigins.some(allowed => origin.startsWith(allowed))) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  },
   credentials: true
 }));
 
