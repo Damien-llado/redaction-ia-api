@@ -4,10 +4,10 @@
   "main": "dist/server.js",
   "scripts": {
     "dev": "nodemon --exec ts-node src/server.ts",
-    "build": "tsc && tsc scripts/migrate-data.ts --outDir dist/scripts --esModuleInterop --resolveJsonModule",
+    "build": "tsc",
     "start": "node dist/server.js",
     "migrate": "node dist/scripts/migrate-data.js",
-    "migrate:dev": "ts-node scripts/migrate-data.ts",
+    "migrate:dev": "ts-node src/scripts/migrate-data.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

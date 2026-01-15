@@ -1,0 +1,52 @@
+[
+  {
+    "id": "bf364c60-9acd-4b5f-96bd-b2a474d8a2cd",
+    "id_projet": "51dbe0c5-7308-4473-ae65-247dd25475b3",
+    "doc_id": "1wuU0Ltgzz6fTWiLN5yzwfx648xaGoAIp93yWUq5qMz0",
+    "nom_article": "Brief de rédaction - Hypnose et insomnie : retrouvez le sommeil rapidement",
+    "mot_cle": "À définir",
+    "date_redaction": "2025-12-19T15:14:18.372Z",
+    "lien_google_doc": "https://docs.google.com/document/d/1wuU0Ltgzz6fTWiLN5yzwfx648xaGoAIp93yWUq5qMz0",
+    "statut": "en_cours"
+  },
+  {
+    "id": "d22ec289-cae8-4896-906c-5a70ca80356a",
+    "id_projet": "51dbe0c5-7308-4473-ae65-247dd25475b3",
+    "doc_id": "1RqLmfOfA4SKUKJMTk2V-5HxLdx3IICC8CFjLwnW_p8U",
+    "nom_article": "TEST 1 Brief de rédaction - Hypnose et insomnie : retrouvez le sommeil rapidement",
+    "mot_cle": "À définir",
+    "date_redaction": "2025-12-26T09:15:48.669Z",
+    "lien_google_doc": "https://docs.google.com/document/d/1RqLmfOfA4SKUKJMTk2V-5HxLdx3IICC8CFjLwnW_p8U",
+    "statut": "en_cours"
+  },
+  {
+    "id": "c1623c32-185a-4b2b-8c91-38fdeeac282a",
+    "id_projet": "51dbe0c5-7308-4473-ae65-247dd25475b3",
+    "doc_id": "1kyGm5wLtuvoBZsIFgxk6pJZ2z6d3OAiHyUZC8kltAUE",
+    "nom_article": "TEST 2 Brief de rédaction - Hypnose et insomnie : retrouvez le sommeil rapidement",
+    "mot_cle": "À définir",
+    "date_redaction": "2025-12-26T19:21:05.555Z",
+    "lien_google_doc": "https://docs.google.com/document/d/1kyGm5wLtuvoBZsIFgxk6pJZ2z6d3OAiHyUZC8kltAUE",
+    "statut": "en_cours"
+  },
+  {
+    "id": "2b8e454a-4fd5-4431-9a74-2b6412dca742",
+    "id_projet": "3d764d1a-320b-4ed4-8102-d9146111792d",
+    "doc_id": "1V4cx-VfGKqBcsM1z0gWPAyX_PCxwUUTwARfwJQZnQWg",
+    "nom_article": "Brief SEO - Quel métier de la communication est fait pour toi ?",
+    "mot_cle": "À définir",
+    "date_redaction": "2026-01-06T18:18:05.826Z",
+    "lien_google_doc": "https://docs.google.com/document/d/1V4cx-VfGKqBcsM1z0gWPAyX_PCxwUUTwARfwJQZnQWg",
+    "statut": "en_cours"
+  },
+  {
+    "id": "f0d35af1-3bfc-40d5-ab90-0ea0d747be2f",
+    "id_projet": "3d764d1a-320b-4ed4-8102-d9146111792d",
+    "doc_id": "1FENqRpIHRlSKbSfnZKSqCEKWlGk4YXsUhIL8mnDSFqI",
+    "nom_article": "Brief SEO - Pourquoi utiliser LinkedIn comme outil de communication en 2026 ?",
+    "mot_cle": "À définir",
+    "date_redaction": "2026-01-06T19:50:49.072Z",
+    "lien_google_doc": "https://docs.google.com/document/d/1FENqRpIHRlSKbSfnZKSqCEKWlGk4YXsUhIL8mnDSFqI",
+    "statut": "en_cours"
+  }
+]
