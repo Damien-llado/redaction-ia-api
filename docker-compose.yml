@@ -5,7 +5,7 @@ services:
   api:
     build: .
     ports:
-      - "3000:3000"
+      - "3001:3000"
     environment:
       - DATABASE_URL=postgresql://postgres:password@db:5432/redaction_ia
       - JWT_SECRET=${JWT_SECRET:-dev-secret-minimum-32-caracteres-pour-jwt}
